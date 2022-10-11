@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON CLASSES */
+
+.flex{
+    display: flex;
+
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.align-center{
+    align-items: center;
+}
+.color-white{
+    color: white;
+}
+
+.padding{
+    padding: 1rem;
+}
+
+
+/* COMMON STYLE */
+h1{
+    font-weight: 300;
+}
+
+#rental-form select,
+#rental-form input{
+    border: 0;
+    color: rgba(45, 52, 54, 1);
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 0.8em;
+}
+
+
+
+/* HEADER */
+
+header{
+    height: 60vh;
+    background: url('../img/background.jpg') no-repeat;
+    background-size: cover; 
+    background-position-y: center;
+    
+}
+
+#burger-menu{
+    height: 5vh;
+    width: 5vh;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10%;
+    cursor: pointer;
+}    
+#burger-menu div{
+    height: 5%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 7% 0;
+}
+
+#header-renting-part{
+    height: 90%;
+}
+
+h1{
+    margin-bottom: 0.5rem;
+}
+
+#rental-form{
+    width: 65vw;
+
+}
+
+#pickup-part{
+    width: 80%;
+    padding: 0.4rem 0rem 0.4rem 0.4rem;
+    background-color: rgba(189, 195, 199, 0.6);
+}
+
+.submit-part{
+    width: 20%;
+}
+
+#pickup-part select,
+#pickup-part input{
+    width: 28.33%;
+    padding: 0.4rem 0rem 0.4rem 1rem;
+}
+
+#submit-part input{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 157, 70, 0.6);
+    color: white;
+}
+
+#pickup-part select{
+    margin: 0 5% 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+}
+
+
+input[type='date']{
+    position: relative;
+}
+input[type='date']::before{
+    width: 100%;
+    content: attr(placeholder);
+}
+input[type='date']:hover::before{
+    width: 0%;
+    content:"";
+}
+
+input[type='date']::after{
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    background: rgba(189, 195, 199, 1);
+    content: '';
+    right: 0;
+    color: black;
+}
+
+#pickup-part input:nth-of-type(2){
+    margin: 0 5%;
+}
+/* MAIN */
+
+#results,
+.car-description{
+    width: 65vw;
+}
+
+/* FOOTER */
+footer img{
+    width: 100px;
+    margin-right: 1rem;
+}

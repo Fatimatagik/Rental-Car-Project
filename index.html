@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RENTAL CAR PROJECT</title>
+</head>
+<body>
+
+
+    <header class="flex flex-column padding">
+        <!--BURGER MENU-->
+
+        <div class="flex justify-end">
+
+            <div id="burger-menu" class=" flex flex-column align-center justify-center">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div id="header-renting-part" class="flex flex-column align-center justify-between">
+            <!-- TOP PART -->
+            <div class="flex flex-column align-center">
+                <div class="color-white">
+                    <h1>Bienvenue à bord</h1>
+                </div>
+
+                <div class="color-white">
+                    <p>Rental car 24h/24 7/7</p>
+                </div>
+            </div>
+
+            <!-- BOTTOM PART -->
+            <div>
+                <form action="" method="" id="rental-form" class="flex">
+                    <div id="pickup-part" class="flex">
+                        <select name="" id="">
+                            <option value="none">Pick-up Location</option>
+                            <option value="paris">Paris</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="lisbonne">Lisbonne</option>
+                            <option value="casablanca">Casablanca</option>
+                        </select>
+
+                        <input type="date" placeholder="Pick-up date">
+                        <input type="date" placeholder="drop off date">
+                    </div>
+                    <div id="submit-part">
+                        <input type="submit" value="Validate Search">
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </header>
+    
+    <main class="flex flex-column align-center padding">
+
+        <!-- FIRST PART FILTER -->
+
+        <div id="results" class="flex justify-between">
+            <p> 7 Results</p>
+
+            <form action="#">
+                <select name="filter" id="">
+                    <option value="Order by price">Order by price</option>
+                    <option value="Small Cars">Small Cars</option>
+                    <option value="Large Cars">Large Cars</option>
+                    <option value="Premium Cars">Premium Cars</option>
+                    <option value="Estate Cars">Estate Cars</option>
+                </select>
+            </form>
+        </div>
+
+
+        <!-- CARS -->
+        <!-- CAR 1 -->
+
+        <div class="car-description flex">
+            <!-- LEFT PART -->
+            <div>
+                <!-- LEFT ARROW -->
+                <div></div>
+                <div><img src="img/vehicule1.jpg" alt="First vehicule"></div>
+                <!-- RIGHT ARROW -->
+                <div></div>
+            </div>
+
+            <!-- RIGHT PART -->
+            <div>
+                <h4>Peugeot 208</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>999 € - Paris Agency</p>
+                <button>Rent and Pay</button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="flex justify-center">
+        <img src="img/agence.jpg" alt="The Agency">
+        <ul>
+            <li>Our Agency</li>
+            <li>300 Boulevard de Vaugirard 75015 Paris</li>
+            <li>Opened 24h/24 7/7 between 14h and 20h</li>
+            <li>01 02 03 04 10</li>
+            <li>contac@gmail.com</li>
+        </ul>
+    </footer>
+
+
+</body>
+</html>
