@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* COMMON CLASSES */
@@ -50,6 +51,10 @@
 /* COMMON STYLE */
 h1{
     font-weight: 300;
+}
+
+h3{
+    font-weight: 500;
 }
 
 #rental-form select,
@@ -156,9 +161,11 @@ input[type='date']::after{
     height: 100%;
     position: absolute;
     background: rgba(189, 195, 199, 1);
-    content: '';
+    font-family: 'FontAwsome';
+    content: '\f073';
     right: 0;
     color: black;
+    padding: 17px 0px 0px 8px;
 }
 
 #pickup-part input:nth-of-type(2){
@@ -171,8 +178,160 @@ input[type='date']::after{
     width: 65vw;
 }
 
+#results span{
+    font-size: 1.5rem;
+
+}
+
+#results select{
+    border: 1px solid rgba(189, 195, 199, 0.6);
+    border-radius: 10%;
+    background-color: rgba(240, 242, 243);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+    padding: 0.4rem 1rem;
+}
+
+.car-description{
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(127, 140, 141, 1);
+}
+
+.arrow-left{
+border-top:8px solid transparent ;
+border-bottom:8px solid transparent ;
+border-right:8px solid black ;
+}
+
+.arrow-right{
+    border-top:8px solid transparent ;
+    border-bottom:8px solid transparent ;
+    border-left:8px solid black ;
+}
+
+.car-description > div:nth-of-type(1){
+    margin-right: 3rem;
+}
+
+.img-outer{
+    width: 70%;
+    
+}
+
+.img-outer img{
+    width: 100%;
+    border-radius: 1%;
+}
+
+.car-description h3,
+.car-description p{
+    line-height: 1rem;
+}
+
+.car-description button{
+    background-color: rgba(70, 157, 70, 0.6) ;
+    padding:0.4rem;
+    color:white ;
+    border-radius: 10%;
+    border:0.4rem ridge rgba(0, 0, 0, 0.6) ;
+}
+
+
 /* FOOTER */
 footer img{
     width: 100px;
     margin-right: 1rem;
+}
+
+/* RWD */
+
+/* SmartPones */
+
+
+
+@media screen and (max-width: 575.98px){
+
+    #rental-form,
+    #results,
+    .car-description{
+        width: 90vw;
+    }
+
+    #header-renting-part{
+        justify-content: space-around;
+    }
+    #rental-form #pickup-part select,
+    #rental-form #pickup-part input {
+        margin: 0;
+        width: 100%;
+    }
+
+    #rental-form #pickup-part input:nth-last-of-type(1) {
+        margin: 0.4rem 0;
+    }
+
+    .img-outer{
+        width: 80%;
+    }
+}
+
+/* Tablets and SmartPhones */
+
+@media screen and (max-width: 991.98px){
+
+
+    #rental-form{
+        flex-direction: column;
+    }
+    #pickup-part{
+        padding: 0.4rem;
+        flex-wrap: wrap;
+    }
+
+    #submit-part input{
+        padding: 0.5rem;
+    }
+
+    #results select{
+        position: relative;
+        top: 20px;
+    }
+
+    .car-details h3,
+    .car-details p{
+        display: none;
+    }
+
+    .car-description{
+        justify-content: space-between;
+    }
+    .car-description > div:nth-last-of-type(1){
+        width: 70%;
+        margin-right: 0;
+    }
+
+}
+
+/* Tablets */
+
+@media screen and (min-width: 575.99px) and (max-width: 575.98px) {
+    #rental-form,
+    #results,
+    .car-description{
+        width: 80vw;
+    }
+
+    #rental-form #pickup-part select,
+    #rental-form #pickup-part input {
+        margin: 0;
+        width: 32.5%;
+    }
+
+    #submit-part input{
+        padding: 0.5rem;
+    }
 }
