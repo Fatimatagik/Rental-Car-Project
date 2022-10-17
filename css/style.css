@@ -97,6 +97,19 @@ header{
     margin: 7% 0;
 }
 
+#scrolling-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 8vh;
+    width: 100%;
+    background: white;
+}
+
+#scrolling-menu ul li{
+    padding: 0.4rem;
+}
+
 #header-renting-part{
     height: 90%;
 }
@@ -229,7 +242,7 @@ border-right:8px solid black ;
 
 .car-description h3,
 .car-description p{
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 
 .car-description button{
