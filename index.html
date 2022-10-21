@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>RENTAL CAR PROJECT</title>
 </head>
 <body>
@@ -97,7 +98,13 @@
             <div class="flex align-center">
                 <!-- LEFT ARROW -->
                 <div class="arrow-left"></div>
-                <div class="img-outer"><img src="img/vehicule1.jpg" alt="First vehicule"></div>
+                <div class="img-outer">
+                    <div class="img-container flex">
+                        <img src="img/vehicule1.jpg" alt="First vehicule">
+                        <img src="img/vehicule4.jpg" alt="Second vehicule">
+                        <img src="img/vehicule3.jpg" alt="Third vehicule">
+                    </div>
+                </div>
                 <!-- RIGHT ARROW -->
                 <div class="arrow-right"></div>
             </div>
@@ -118,7 +125,13 @@
             <div class="flex align-center">
                 <!-- LEFT ARROW -->
                 <div class="arrow-left"></div>
-                <div class="img-outer"><img src="img/vehicule2.jpg" alt="First vehicule"></div>
+                <div class="img-outer">
+                    <div class="img-container flex">
+                        <img src="img/vehicule2.jpg" alt="First vehicule">
+                        <img src="img/vehicule3.jpg" alt="Second vehicule">
+                        <img src="img/vehicule4.jpg" alt="Third vehicule">
+                    </div>
+                </div>
                 <!-- RIGHT ARROW -->
                 <div class="arrow-right"></div>
             </div>
@@ -139,7 +152,13 @@
             <div class="flex align-center">
                 <!-- LEFT ARROW -->
                 <div class="arrow-left"></div>
-                <div class="img-outer"><img src="img/vehicule3.jpg" alt="First vehicule"></div>
+                <div class="img-outer">
+                    <div class="img-container flex">
+                        <img src="img/vehicule3.jpg" alt="First vehicule">
+                        <img src="img/vehicule1.jpg" alt="Second vehicule">
+                        <img src="img/vehicule4.jpg" alt="Third vehicule">
+                    </div>
+                </div>
                 <!-- RIGHT ARROW -->
                 <div class="arrow-right"></div>
             </div>
@@ -153,14 +172,20 @@
             </div>
         </div>
 
-        <!-- CAR  -->
+        <!-- CAR4  -->
 
         <div class="car-description flex align-center">
             <!-- LEFT PART -->
             <div class="flex align-center">
                 <!-- LEFT ARROW -->
                 <div class="arrow-left"></div>
-                <div class="img-outer"><img src="img/vehicule4.jpg" alt="First vehicule"></div>
+                <div class="img-outer">
+                    <div class="img-container flex">
+                        <img src="img/vehicule4.jpg" alt="First vehicule">
+                        <img src="img/vehicule2.jpg" alt="Second vehicule">
+                        <img src="img/vehicule1.jpg" alt="Third vehicule">
+                    </div>
+                </div>
                 <!-- RIGHT ARROW -->
                 <div class="arrow-right"></div>
             </div>
@@ -174,8 +199,125 @@
             </div>
         </div>
 
-        
-        
+
+        <!-- Vehicules to be faded -->
+        <!-- CAR 1 -->
+
+        <div class="tobeFaded">
+            <div class="car-description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!-- LEFT ARROW -->
+                    <div class="arrow-left"></div>
+                    <div class="img-outer">
+                        <div class="img-container flex">
+                            <img src="img/vehicule1.jpg" alt="First vehicule">
+                            <img src="img/vehicule3.jpg" alt="Second vehicule">
+                            <img src="img/vehicule4.jpg" alt="Third vehicule">
+                        </div>
+                    </div>
+                    <!-- RIGHT ARROW -->
+                    <div class="arrow-right"></div>
+                </div>
+
+                <!-- RIGHT PART -->
+                <div>
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>999 € - Paris Agency</p>
+                    <button>Rent and Pay</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAR 2 -->
+
+        <div class="tobeFaded">
+            <div class="car-description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!-- LEFT ARROW -->
+                    <div class="arrow-left"></div>
+                    <div class="img-outer">
+                        <div class="img-container flex">
+                            <img src="img/vehicule2.jpg" alt="First vehicule">
+                            <img src="img/vehicule3.jpg" alt="Second vehicule">
+                            <img src="img/vehicule4.jpg" alt="Third vehicule">
+                        </div>
+                    </div>
+                    <!-- RIGHT ARROW -->
+                    <div class="arrow-right"></div>
+                </div>
+
+                <!-- RIGHT PART -->
+                <div>
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>999 € - Paris Agency</p>
+                    <button>Rent and Pay</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAR 3 -->
+
+        <div class="tobeFaded">
+            <div class="car-description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!-- LEFT ARROW -->
+                    <div class="arrow-left"></div>
+                    <div class="img-outer">
+                        <div class="img-container flex">
+                            <img src="img/vehicule3.jpg" alt="First vehicule">
+                            <img src="img/vehicule2.jpg" alt="Second vehicule">
+                            <img src="img/vehicule1.jpg" alt="Third vehicule">
+                        </div>
+                    </div>
+                    <!-- RIGHT ARROW -->
+                    <div class="arrow-right"></div>
+                </div>
+
+                <!-- RIGHT PART -->
+                <div>
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>999 € - Paris Agency</p>
+                    <button>Rent and Pay</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAR 4 -->
+
+        <div class="tobeFaded">
+            <div class="car-description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!-- LEFT ARROW -->
+                    <div class="arrow-left"></div>
+                    <div class="img-outer">
+                        <div class="img-container flex">
+                            <img src="img/vehicule4.jpg" alt="First vehicule">
+                            <img src="img/vehicule3.jpg" alt="Second vehicule">
+                            <img src="img/vehicule2.jpg" alt="Third vehicule">
+                        </div>
+                    </div>
+                    <!-- RIGHT ARROW -->
+                    <div class="arrow-right"></div>
+                </div>
+
+                <!-- RIGHT PART -->
+                <div>
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>999 € - Paris Agency</p>
+                    <button>Rent and Pay</button>
+                </div>
+            </div>
+        </div>
+
+
 
 
 
@@ -193,6 +335,7 @@
         </ul>
     </footer>
 
+    <script src="js/app.js"></script>
 
 </body>
 </html>
